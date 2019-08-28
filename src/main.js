@@ -4,8 +4,12 @@ import router from './router'
 import store from './store'
 import './plugins/element.js'
 import '@/assets/css/reset.css'
+import VueHighcharts from 'vue-highcharts';
+import axios from '@/plugins/axios'
 
 
+Vue.use(axios)
+Vue.use(VueHighcharts);
 
 Vue.config.productionTip = false
 

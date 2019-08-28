@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Home from '@/components/base/Home.vue' 
 import Centent from '@/views/Centent.vue'
 import Overview from '@/views/Overview.vue'
-
+import nodes from '@/views/elasticsearch/nodes.vue'
 
 Vue.use(Router)
 
@@ -28,8 +28,8 @@ export default new Router({
       component: Home,
       children: [
         {
-          path: 'centent',
-          component: Centent
+          path: 'elasticsearch/nodes',
+          component: nodes
         },
         {
           path: 'overview',
